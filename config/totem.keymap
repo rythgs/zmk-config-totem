@@ -102,6 +102,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        screenshot: screenshot {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SCREENSHOT";
+            bindings = <&kp LG(LS(NUMBER_4))>, <&kp LG(LS(NUMBER_5))>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -109,10 +118,10 @@
 
         Base {
             bindings = <
-       &kp Q  &kp W         &kp F            &kp P              &kp B                 &kp J                &kp L                &kp U             &kp Y         &none
-       &kp A  &hml LCTRL R  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &kp G                 &kp K                &hmr RIGHT_SHIFT N   &hmr RIGHT_ALT E  &hmr RCTRL I  &kp O
-&none  &kp Z  &kp X         &kp C            &kp D              &kp V                 &kp M                &kp H                &kp COMMA         &kp DOT       &kp MINUS  &none
-                            &mo 3            &lt 1 TAB          &mt LEFT_GUI SPACE    &mt RIGHT_GUI ENTER  &bspc_del_layer 2 0  &mo 4
+             &kp Q  &kp W         &kp F            &kp P              &kp B                 &kp J                &kp L                &kp U             &kp Y         &none
+             &kp A  &hml LCTRL R  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &kp G                 &kp K                &hmr RIGHT_SHIFT N   &hmr RIGHT_ALT E  &hmr RCTRL I  &kp O
+&screenshot  &kp Z  &kp X         &kp C            &kp D              &kp V                 &kp M                &kp H                &kp COMMA         &kp DOT       &kp MINUS  &none
+                                  &mo 3            &lt 1 TAB          &mt LEFT_GUI SPACE    &mt RIGHT_GUI ENTER  &bspc_del_layer 2 0  &mo 4
             >;
         };
 
