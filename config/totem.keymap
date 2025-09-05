@@ -72,26 +72,24 @@
         };
 
         // カスタムホールドタップ動作の定義
-
         bspc_del_layer: backspace_delete_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "BSPC_DEL_LAYER";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;  // ホールド判定までの時間（ミリ秒）
-            quick-tap-ms = <150>;     // 連続タップ時の判定時間
+            tapping-term-ms = <175>;  // ホールド判定までの時間（ミリ秒）
+            quick-tap-ms = <200>;     // 連続タップ時の判定時間
             flavor = "tap-preferred"; // タップを優先
             bindings = <&mo>, <&bspc_del_mod>;
         };
 
         // Shift修飾キー付きタップの動作
-
         bspc_del_mod: backspace_delete_mod {
             compatible = "zmk,behavior-mod-morph";
             label = "BSPC_DEL_MOD";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
-            mods = <(MOD_LSFT|MOD_RSFT)>;  // Shiftキーで切り替え
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         win_center_or_maximize: win_center_or_maximize {
