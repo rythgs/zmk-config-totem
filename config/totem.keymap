@@ -43,7 +43,7 @@
         };
 
         mouse {
-            bindings = <&to 5>;
+            bindings = <&tog 5>;
             key-positions = <2 3>;
         };
     };
