@@ -178,7 +178,7 @@
 
         Function {
             bindings = <
-       &screenshot  &kp LEFT_GUI   &kp LS(TAB)   &kp TAB        &none     &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &none  &none
+       &screenshot  &none          &none         &none          &none     &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &none  &none
        &kp F1       &hml LCTRL F2  &hml LALT F3  &hml LSHFT F4  &kp F5    &none       &none         &none         &none  &none
 &none  &none        &none          &none         &none          &none     &none       &none         &none         &none  &none  &none
                                    &trans        &trans         &trans    &trans      &trans        &mo SYSTEM
