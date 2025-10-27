@@ -21,7 +21,6 @@
 #define FUNC    3
 #define SYSTEM  4
 #define MOUSE   5
-#define SCROLL  6
 
 &mt { tapping-term-ms = <175>; };
 
@@ -177,10 +176,10 @@
 
         System {
             bindings = <
-       &none         &none         &none         &bt BT_CLR    &bt BT_CLR_ALL    &none  &none  &none  &none  &none
-       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &none  &none  &none  &none  &none
-&none  &none         &none         &none         &none         &none             &none  &none  &none  &none  &none  &none
-                                   &none         &none         &none             &none  &none  &none
+       &none         &none         &none         &none         &none         &none  &none  &none  &none  &none
+       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &none  &none  &none  &none  &none
+&none  &none         &none         &none         &none         &none         &none  &none  &none  &none  &none  &none
+                                   &none         &none         &none         &none  &none  &none
             >;
         };
 
