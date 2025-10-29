@@ -65,6 +65,12 @@
             bindings = <&bootloader>;
             key-positions = <15 26 31>;
         };
+
+        caps_word {
+            bindings = <&caps_word>;
+            key-positions = <13 16>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -151,9 +157,9 @@
 
         Base {
             bindings = <
-            &kp Q  &kp W         &kp F            &kp P              &kp B                 &kp J                &kp L                  &kp U             &kp Y         &mt LEFT_GUI LG(TAB)
+            &kp Q  &kp W         &kp F            &kp P              &kp B                 &kp J                &kp L                  &kp U             &kp Y         &none
             &kp A  &hml LCTRL R  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &kp G                 &kp K                &hmr RIGHT_SHIFT N     &hmr RIGHT_ALT E  &hmr RCTRL I  &kp O
-&kp ESCAPE  &kp Z  &kp X         &kp C            &kp D              &kp V                 &kp M                &kp H                  &kp COMMA         &kp DOT       &kp MINUS  &none
+&kp ESCAPE  &kp Z  &kp X         &kp C            &kp D              &kp V                 &kp M                &kp H                  &kp COMMA         &kp DOT       &kp MINUS  &screenshot
                                  &mo FUNC         &lhp SYMBOL TAB    &mt LEFT_GUI SPACE    &mt RIGHT_GUI ENTER  &bspc_del_layer NAV 0  &mo MOUSE
             >;
         };
@@ -162,26 +168,26 @@
             bindings = <
        &kp ASTERISK   &kp PLUS                   &kp MINUS           &kp SLASH               &kp PERCENT       &kp LEFT_BRACKET   &kp LESS_THAN                      &kp EQUAL             &kp GREATER_THAN                      &kp RIGHT_BRACKET
        &kp TILDE      &hml LEFT_CONTROL AT_SIGN  &hml LEFT_ALT HASH  &hml LEFT_SHIFT DOLLAR  &kp UNDERSCORE    &kp LEFT_BRACE     &hmr RIGHT_SHIFT LEFT_PARENTHESIS  &hmr RIGHT_ALT COLON  &hmr RIGHT_CONTROL RIGHT_PARENTHESIS  &kp RIGHT_BRACE
-&none  &kp BACKSLASH  &kp CARET                  &kp PIPE            &kp SEMICOLON           &kp AMPERSAND     &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE                   &kp EXCLAMATION       &kp QUESTION                          &kp GRAVE          &none
+&none  &kp BACKSLASH  &kp CARET                  &kp PIPE            &kp SEMICOLON           &kp AMPERSAND     &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE                   &kp EXCLAMATION       &kp QUESTION                          &kp GRAVE          &kp RA(RG(I))
                                                  &trans              &trans                  &trans            &trans             &kp LG(SLASH)                      &trans
             >;
         };
 
         Nav {
             bindings = <
-       &none   &none                       &none                   &none                     &none     &none   &kp ESCAPE      &kp UP_ARROW    &caps_word       &none
-       &kp N1  &hml LEFT_CONTROL NUMBER_2  &hml LEFT_ALT NUMBER_3  &hml LEFT_SHIFT NUMBER_4  &kp N5    &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
-&none  &kp N6  &kp N7                      &kp N8                  &kp N9                    &kp N0    &none   &none           &none           &none            &none  &none
-                                           &trans                  &kp PERIOD                &trans    &trans  &trans          &trans
+       &none   &none                       &none                   &none                     &none     &kp RC(UP)  &kp RC(LEFT)    &kp UP_ARROW    &kp RC(RIGHT)    &none
+       &kp N1  &hml LEFT_CONTROL NUMBER_2  &hml LEFT_ALT NUMBER_3  &hml LEFT_SHIFT NUMBER_4  &kp N5    &none       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&none  &kp N6  &kp N7                      &kp N8                  &kp N9                    &kp N0    &none       &none           &none           &none            &none  &none
+                                           &trans                  &kp PERIOD                &trans    &trans      &trans          &trans
             >;
         };
 
         Function {
             bindings = <
-       &screenshot  &none          &none         &none          &none     &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &none  &none
-       &kp F1               &hml LCTRL F2  &hml LALT F3  &hml LSHFT F4  &kp F5    &none       &none         &none         &none  &none
-&none  &none                &none          &none         &none          &none     &none       &none         &none         &none  &none  &none
-                                           &trans        &trans         &trans    &trans      &trans        &mo SYSTEM
+       &kp Q   &mt (LEFT_GUI) LG(TAB)  &none         &none          &none     &kp C_VOL_UP       &kp LC(LA(U))     &kp LA(LC(UP_ARROW))    &kp LA(LC(I))      &none
+       &kp F1  &hml LCTRL F2           &hml LALT F3  &hml LSHFT F4  &kp F5    &kp K_MUTE         &kp LA(LC(LEFT))  &kp LA(LC(C))           &kp LA(LC(RIGHT))  &none
+&none  &none   &none                   &kp RA(C)     &none          &none     &kp C_VOLUME_DOWN  &kp LA(LC(J))     &kp LA(LC(DOWN_ARROW))  &kp LA(LC(K))      &none  &none
+                                       &trans        &trans         &trans    &trans             &trans            &mo SYSTEM
             >;
         };
 
