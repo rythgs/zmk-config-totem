@@ -137,7 +137,7 @@
         screenshot: screenshot {
             compatible = "zmk,behavior-mod-morph";
             label = "SCREENSHOT";
-            bindings = <&kp LG(LS(NUMBER_4))>, <&kp LG(LS(NUMBER_5))>;
+            bindings = <&kp RS(RG(NUMBER_4))>, <&kp RS(RG(NUMBER_5))>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -157,10 +157,10 @@
 
         Base {
             bindings = <
-            &kp Q  &kp W         &kp F            &kp P              &kp B                 &kp J                &kp L                  &kp U             &kp Y         &none
-            &kp A  &hml LCTRL R  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &kp G                 &kp K                &hmr RIGHT_SHIFT N     &hmr RIGHT_ALT E  &hmr RCTRL I  &kp O
-&kp ESCAPE  &kp Z  &kp X         &kp C            &kp D              &kp V                 &kp M                &kp H                  &kp COMMA         &kp DOT       &kp MINUS  &screenshot
-                                 &mo FUNC         &lhp SYMBOL TAB    &mt LEFT_GUI SPACE    &mt RIGHT_GUI ENTER  &bspc_del_layer NAV 0  &mo MOUSE
+       &kp Q  &kp W         &kp F            &kp P              &kp B                 &kp J                &kp L                  &kp U             &kp Y         &none
+       &kp A  &hml LCTRL R  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &kp G                 &kp K                &hmr RIGHT_SHIFT N     &hmr RIGHT_ALT E  &hmr RCTRL I  &kp O
+&none  &kp Z  &kp X         &kp C            &kp D              &kp V                 &kp M                &kp H                  &kp COMMA         &kp DOT       &kp MINUS  &screenshot
+                            &mo FUNC         &lhp SYMBOL TAB    &mt LEFT_GUI SPACE    &mt RIGHT_GUI ENTER  &bspc_del_layer NAV 0  &mo MOUSE
             >;
         };
 
