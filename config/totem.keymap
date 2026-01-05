@@ -148,9 +148,9 @@
         };
 
         swapper: swapper {
-            compatible = "zmk,behavior-smart-toggle";
+            compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
-            bindings = <&kp LGUI>, <&kp TAB>;
+            bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
             ignored-key-positions = <0 7 16 17 18 36>;
         };
     };

@@ -7,5 +7,9 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: zmk-tri-state
+      remote: zmkfirmware
+      revision: main
+      url: https://github.com/dhruvinsh/zmk-tri-state
   self:
     path: config
