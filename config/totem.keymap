@@ -26,7 +26,7 @@
 &mt { tapping-term-ms = <175>; };
 
 &mmv {
-    acceleration-exponent = <1>;      // 1
+    acceleration-exponent = <2>;      // 1
     time-to-max-speed-ms = <500>;     // 300
     delay-ms = <0>;                   // 0
 };
@@ -70,16 +70,6 @@
         Reset_R {
             bindings = <&bootloader>;
             key-positions = <15 26 31>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <12 13>;
-        };
-
-        backspace_delete {
-            bindings = <&bspc_del_mod>;
-            key-positions = <16 17>;
         };
     };
 
@@ -156,6 +146,13 @@
             flavor = "hold-preferred";
             bindings = <&mo>, <&kp>;
         };
+
+        swapper: swapper {
+            compatible = "zmk,behavior-smart-toggle";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI>, <&kp TAB>;
+            ignored-key-positions = <0 7 16 17 18 36>;
+        };
     };
 
     keymap {
@@ -163,10 +160,10 @@
 
         Base {
             bindings = <
-       &kp Q  &kp W         &kp F            &kp P              &kp B                 &kp J                &kp L               &kp U             &kp Y         &none
-       &kp A  &hml LCTRL R  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &kp G                 &kp K                &hmr RIGHT_SHIFT N  &hmr RIGHT_ALT E  &hmr RCTRL I  &kp O
-&none  &kp Z  &kp X         &kp C            &kp D              &kp V                 &kp M                &kp H               &kp COMMA         &kp DOT       &kp MINUS  &none
-                            &mo FUNC         &mo SYMBOL         &mt LEFT_GUI SPACE    &mt RIGHT_GUI ENTER  &mo NAV             &mo MOUSE
+       &kp Q  &kp W         &kp F            &kp P              &kp B                 &kp J                &kp L                  &kp U             &kp Y         &none
+       &kp A  &hml LCTRL R  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &kp G                 &kp K                &hmr RIGHT_SHIFT N     &hmr RIGHT_ALT E  &hmr RCTRL I  &kp O
+&none  &kp Z  &kp X         &kp C            &kp D              &kp V                 &kp M                &kp H                  &kp COMMA         &kp DOT       &kp MINUS  &none
+                            &mo FUNC         &lhp SYMBOL TAB    &mt LEFT_GUI SPACE    &mt RIGHT_GUI ENTER  &bspc_del_layer NAV 0  &mo MOUSE
             >;
         };
 
@@ -190,7 +187,7 @@
 
         Function {
             bindings = <
-       &none   &none          &none         &none          &none     &kp C_VOL_UP       &kp LC(LA(U))          &kp LA(LC(UP_ARROW))    &kp LA(LC(I))      &kp LA(LC(EQUAL))
+       &none   &swapper       &none         &none          &none     &kp C_VOL_UP       &kp LC(LA(U))          &kp LA(LC(UP_ARROW))    &kp LA(LC(I))      &kp LA(LC(EQUAL))
        &kp F1  &hml LCTRL F2  &hml LALT F3  &hml LSHFT F4  &kp F5    &kp C_VOLUME_DOWN  &kp LA(LC(LEFT))       &kp LA(LC(C))           &kp LA(LC(RIGHT))  &kp LA(LC(MINUS))
 &none  &none   &none          &kp RA(C)     &none          &none     &kp K_MUTE         &kp LA(LC(J))          &kp LA(LC(DOWN_ARROW))  &kp LA(LC(K))      &none              &none
                               &trans        &trans         &trans    &kp LA(LC(ENTER))  &kp LA(LC(BACKSPACE))  &mo SYSTEM
