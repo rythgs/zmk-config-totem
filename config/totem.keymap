@@ -77,8 +77,8 @@
             key-positions = <12 13>;
         };
 
-        backspace {
-            bindings = <&kp BACKSPACE>;
+        backspace_delete {
+            bindings = <&bspc_del_mod>;
             key-positions = <16 17>;
         };
     };
