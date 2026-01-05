@@ -57,16 +57,6 @@
             layers = <0>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
-        };
-
         combo_studio_unlock {
             bindings = <&studio_unlock>;
             key-positions = <21 22 23 24>;
@@ -80,6 +70,16 @@
         Reset_R {
             bindings = <&bootloader>;
             key-positions = <15 26 31>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <12 13>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <16 17>;
         };
     };
 
@@ -163,10 +163,10 @@
 
         Base {
             bindings = <
-       &kp Q  &kp W         &kp F            &kp P              &kp B                 &kp J                &kp L                  &kp U             &kp Y         &none
-       &kp A  &hml LCTRL R  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &kp G                 &kp K                &hmr RIGHT_SHIFT N     &hmr RIGHT_ALT E  &hmr RCTRL I  &kp O
-&none  &kp Z  &kp X         &kp C            &kp D              &kp V                 &kp M                &kp H                  &kp COMMA         &kp DOT       &kp MINUS  &none
-                            &mo FUNC         &lhp SYMBOL TAB    &mt LEFT_GUI SPACE    &mt RIGHT_GUI ENTER  &bspc_del_layer NAV 0  &mo MOUSE
+       &kp Q  &kp W         &kp F            &kp P              &kp B                 &kp J                &kp L               &kp U             &kp Y         &none
+       &kp A  &hml LCTRL R  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &kp G                 &kp K                &hmr RIGHT_SHIFT N  &hmr RIGHT_ALT E  &hmr RCTRL I  &kp O
+&none  &kp Z  &kp X         &kp C            &kp D              &kp V                 &kp M                &kp H               &kp COMMA         &kp DOT       &kp MINUS  &none
+                            &mo FUNC         &mo SYMBOL         &mt LEFT_GUI SPACE    &mt RIGHT_GUI ENTER  &mo NAV             &mo MOUSE
             >;
         };
 
