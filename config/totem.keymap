@@ -151,6 +151,7 @@
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
+
             ignored-key-positions = <0 7 16 17 18 36>;
         };
     };
@@ -172,7 +173,7 @@
              &kp ASTERISK   &kp PLUS                   &kp MINUS           &kp SLASH               &kp PERCENT       &kp LEFT_BRACKET   &kp LESS_THAN                      &kp EQUAL             &kp GREATER_THAN                      &kp RIGHT_BRACKET
              &kp TILDE      &hml LEFT_CONTROL AT_SIGN  &hml LEFT_ALT HASH  &hml LEFT_SHIFT DOLLAR  &kp UNDERSCORE    &kp LEFT_BRACE     &hmr RIGHT_SHIFT LEFT_PARENTHESIS  &hmr RIGHT_ALT COLON  &hmr RIGHT_CONTROL RIGHT_PARENTHESIS  &kp RIGHT_BRACE
 &screenshot  &kp BACKSLASH  &kp CARET                  &kp PIPE            &kp SEMICOLON           &kp AMPERSAND     &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE                   &kp EXCLAMATION       &kp QUESTION                          &kp GRAVE          &kp RA(RG(I))
-                                                       &trans              &trans                  &trans            &trans             &kp LG(SLASH)                      &trans
+                                                       &trans              &trans                  &trans            &trans             &trans                             &kp LG(SLASH)
             >;
         };
 
@@ -180,8 +181,8 @@
             bindings = <
        &none   &none                       &none                   &none                     &none     &kp RC(UP)  &kp RC(LEFT)    &kp UP_ARROW    &kp RC(RIGHT)    &none
        &kp N1  &hml LEFT_CONTROL NUMBER_2  &hml LEFT_ALT NUMBER_3  &hml LEFT_SHIFT NUMBER_4  &kp N5    &kp ESCAPE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
-&none  &kp N6  &kp N7                      &kp N8                  &kp N9                    &kp N0    &none       &none           &none           &none            &none  &none
-                                           &trans                  &kp PERIOD                &trans    &trans      &trans          &trans
+&none  &kp N6  &kp N7                      &kp N8                  &kp N9                    &kp N0    &none       &none           &none           &kp PERIOD       &none  &none
+                                           &trans                  &trans                    &trans    &trans      &trans          &trans
             >;
         };
 
