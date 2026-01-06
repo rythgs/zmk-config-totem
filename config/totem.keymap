@@ -188,7 +188,7 @@
 
         Function {
             bindings = <
-       &none   &swapper       &none         &none          &none     &kp C_VOL_UP       &kp LC(LA(U))          &kp LA(LC(UP_ARROW))    &kp LA(LC(I))      &kp LA(LC(EQUAL))
+       &kp Q   &swapper       &none         &none          &none     &kp C_VOL_UP       &kp LC(LA(U))          &kp LA(LC(UP_ARROW))    &kp LA(LC(I))      &kp LA(LC(EQUAL))
        &kp F1  &hml LCTRL F2  &hml LALT F3  &hml LSHFT F4  &kp F5    &kp C_VOLUME_DOWN  &kp LA(LC(LEFT))       &kp LA(LC(C))           &kp LA(LC(RIGHT))  &kp LA(LC(MINUS))
 &none  &none   &none          &kp RA(C)     &none          &none     &kp K_MUTE         &kp LA(LC(J))          &kp LA(LC(DOWN_ARROW))  &kp LA(LC(K))      &none              &none
                               &trans        &trans         &trans    &kp LA(LC(ENTER))  &kp LA(LC(BACKSPACE))  &mo SYSTEM
