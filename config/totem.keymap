@@ -152,7 +152,7 @@
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
 
-            ignored-key-positions = <0 7 16 17 18 36>;
+            ignored-key-positions = <0 7 13 16 17 18 36>;
         };
     };
 
