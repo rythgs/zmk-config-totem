@@ -170,10 +170,10 @@
 
         Symbol {
             bindings = <
-             &kp ASTERISK   &kp PLUS                   &kp MINUS           &kp SLASH               &kp PERCENT       &kp LEFT_BRACKET   &kp LESS_THAN                      &kp EQUAL             &kp GREATER_THAN                      &kp RIGHT_BRACKET
-             &kp TILDE      &hml LEFT_CONTROL AT_SIGN  &hml LEFT_ALT HASH  &hml LEFT_SHIFT DOLLAR  &kp UNDERSCORE    &kp LEFT_BRACE     &hmr RIGHT_SHIFT LEFT_PARENTHESIS  &hmr RIGHT_ALT COLON  &hmr RIGHT_CONTROL RIGHT_PARENTHESIS  &kp RIGHT_BRACE
-&screenshot  &kp BACKSLASH  &kp CARET                  &kp PIPE            &kp SEMICOLON           &kp AMPERSAND     &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE                   &kp EXCLAMATION       &kp QUESTION                          &kp GRAVE          &kp RA(RG(I))
-                                                       &trans              &trans                  &trans            &trans             &trans                             &kp LG(SLASH)
+       &kp ASTERISK   &kp PLUS                   &kp MINUS           &kp SLASH               &kp PERCENT       &kp LEFT_BRACKET   &kp LESS_THAN                      &kp EQUAL             &kp GREATER_THAN                      &kp RIGHT_BRACKET
+       &kp TILDE      &hml LEFT_CONTROL AT_SIGN  &hml LEFT_ALT HASH  &hml LEFT_SHIFT DOLLAR  &kp UNDERSCORE    &kp LEFT_BRACE     &hmr RIGHT_SHIFT LEFT_PARENTHESIS  &hmr RIGHT_ALT COLON  &hmr RIGHT_CONTROL RIGHT_PARENTHESIS  &kp RIGHT_BRACE
+&none  &kp BACKSLASH  &kp CARET                  &kp PIPE            &kp SEMICOLON           &kp AMPERSAND     &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE                   &kp EXCLAMATION       &kp QUESTION                          &kp GRAVE          &none
+                                                 &trans              &trans                  &trans            &trans             &trans                             &kp LG(SLASH)
             >;
         };
 
@@ -188,7 +188,7 @@
 
         Function {
             bindings = <
-       &kp Q   &swapper       &none         &none          &none     &none              &kp LC(LA(U))          &kp LA(LC(UP_ARROW))    &kp LA(LC(I))      &kp LA(LC(EQUAL))
+       &kp Q   &swapper       &screenshot   &kp RA(RG(I))  &none     &none              &kp LC(LA(U))          &kp LA(LC(UP_ARROW))    &kp LA(LC(I))      &kp LA(LC(EQUAL))
        &kp F1  &hml LCTRL F2  &hml LALT F3  &hml LSHFT F4  &kp F5    &none              &kp LA(LC(LEFT))       &kp LA(LC(C))           &kp LA(LC(RIGHT))  &kp LA(LC(MINUS))
 &none  &none   &none          &kp RA(C)     &none          &none     &none              &kp LA(LC(J))          &kp LA(LC(DOWN_ARROW))  &kp LA(LC(K))      &none              &none
                               &trans        &trans         &trans    &kp LA(LC(ENTER))  &kp LA(LC(BACKSPACE))  &mo SYSTEM
@@ -199,7 +199,7 @@
             bindings = <
        &out OUT_TOG   &none          &none          &none          &none             &none  &none  &kp C_VOLUME_UP    &none  &none
        &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_CLR        &none  &none  &kp C_VOLUME_DOWN  &none  &none
-&none  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_CLR_ALL    &none  &none  &kp C_MUTE         &none  &none  &soft_off
+&none  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_CLR_ALL    &none  &none  &kp C_MUTE         &none  &none  &none
                                      &none          &none          &none             &none  &none  &none
             >;
         };
