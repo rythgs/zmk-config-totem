@@ -237,14 +237,19 @@ layers:
 combos:
 - p: [22, 23]
   k: LANG2
+  l: [Base]
 - p: [28, 29]
   k: LANG1
+  l: [Base]
 - p: [13, 16]
   k: '&caps_word'
   l: [Base]
 - p: [21, 22, 23, 24]
   k: '&studio_unlock'
+  l: [Base]
 - p: [20, 14, 25]
   k: '&bootloader'
+  l: [Base]
 - p: [15, 26, 31]
   k: '&bootloader'
+  l: [Base]
