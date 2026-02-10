@@ -4,8 +4,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: dhruvinsh
       url-base: https://github.com/dhruvinsh
-    - name: prospector
-      url-base: https://github.com/t-ogura
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,9 +13,5 @@ manifest:
       remote: dhruvinsh
       revision: main
       repo-path: zmk-tri-state
-    - name: prospector-zmk-module
-      remote: prospector
-      revision: v2.1.0
-      path: modules/prospector-zmk-module
   self:
     path: config
