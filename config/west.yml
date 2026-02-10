@@ -14,6 +14,7 @@ manifest:
     - name: zmk-tri-state
       remote: dhruvinsh
       revision: main
+      repo-path: zmk-tri-state
     - name: prospector-zmk-module
       remote: prospector
       revision: v2.1.0
