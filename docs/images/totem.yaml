@@ -34,10 +34,10 @@ layers:
   - '-'
   - ''
   - Function
-  - {t: $$mdi:keyboard-tab$$, h: Symbol}
-  - {t: $$mdi:keyboard-space$$, h: LEFT GUI}
-  - {t: $$mdi:keyboard-return$$, h: RIGHT GUI}
-  - {t: $$mdi:backspace-outline$$, h: Nav, s: $$mdi:backspace-reverse-outline$$}
+  - {t: TAB, h: Symbol}
+  - {t: SPACE, h: LEFT GUI}
+  - {t: ENTER, h: RIGHT GUI}
+  - {t: BACKSPACE, h: Nav, s: DELETE}
   - Mouse
   Symbol:
   - '*'
@@ -84,20 +84,20 @@ layers:
   - ''
   - ''
   - ''
-  - Ctl+$$mdi:arrow-up$$
-  - Ctl+$$mdi:arrow-left$$
-  - $$mdi:arrow-up$$
-  - Ctl+$$mdi:arrow-right$$
+  - Ctl+UP
+  - Ctl+LEFT
+  - UP ARROW
+  - Ctl+RIGHT
   - F11
   - '1'
   - {t: '2', h: LEFT CONTROL}
   - {t: '3', h: LEFT ALT}
   - {t: '4', h: LEFT SHIFT}
   - '5'
-  - $$mdi:keyboard-esc$$
-  - $$mdi:arrow-left$$
-  - $$mdi:arrow-down$$
-  - $$mdi:arrow-right$$
+  - ESCAPE
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
   - ''
   - ''
   - '6'
@@ -124,8 +124,8 @@ layers:
   - AltGr+Gui+I
   - ''
   - ''
-  - Alt+Ctl+U
-  - Alt+Ctl+$$mdi:arrow-up$$
+  - Ctl+Alt+U
+  - Alt+Ctl+UP ARROW
   - Alt+Ctl+I
   - Alt+Ctl+=
   - F1
@@ -134,9 +134,9 @@ layers:
   - {t: F4, h: LSHFT}
   - F5
   - ''
-  - Alt+Ctl+$$mdi:arrow-left$$
+  - Alt+Ctl+LEFT
   - Alt+Ctl+C
-  - Alt+Ctl+$$mdi:arrow-right$$
+  - Alt+Ctl+RIGHT
   - Alt+Ctl+-
   - ''
   - ''
@@ -146,15 +146,15 @@ layers:
   - ''
   - ''
   - Alt+Ctl+J
-  - Alt+Ctl+$$mdi:arrow-down$$
+  - Alt+Ctl+DOWN ARROW
   - Alt+Ctl+K
   - ''
   - ''
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+Ctl+$$mdi:keyboard-return$$
-  - Alt+Ctl+$$mdi:backspace-outline$$
+  - Alt+Ctl+ENTER
+  - Alt+Ctl+BACKSPACE
   - System
   System:
   - OUT TOG
@@ -164,7 +164,7 @@ layers:
   - ''
   - ''
   - ''
-  - $$mdi:volume-high$$
+  - VOLUME UP
   - ''
   - ''
   - {t: BT, h: '0'}
@@ -174,7 +174,7 @@ layers:
   - BT CLR
   - ''
   - ''
-  - $$mdi:volume-medium$$
+  - VOLUME DOWN
   - ''
   - ''
   - ''
@@ -185,7 +185,7 @@ layers:
   - BT CLR ALL
   - ''
   - ''
-  - $$mdi:volume-mute$$
+  - MUTE
   - ''
   - ''
   - ''
