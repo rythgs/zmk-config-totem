@@ -17,6 +17,16 @@ TOTEM is a 38 key column-staggered split keyboard running [ZMK](https://zmk.dev/
 _This image is auto-generated from `config/totem.keymap` by GitHub Actions on push._
 
 
+## CHANGES FROM UPSTREAM
+
+This fork is based on [GEIGEIGEIST/zmk-config-totem](https://github.com/GEIGEIGEIST/zmk-config-totem). Main differences:
+
+- DYA Studio support is enabled by building against `cormoran/zmk` on `v0.3-branch+dya`.
+- DYA Studio RPC modules are added for BLE management, battery history, settings RPC, and runtime input processing.
+- The left half is built as the Studio/RPC central side with `studio-rpc-usb-uart` and ZMK Studio enabled.
+- Split-side battery/history, settings RPC, and event relay settings are configured for both halves.
+- The keymap is customized and includes a `&studio_unlock` combo for unlocking Studio access.
+
 
 ## HOW TO USE
 
@@ -28,5 +38,5 @@ _This image is auto-generated from `config/totem.keymap` by GitHub Actions on pu
 - scroll down and unzip the `firmware.zip` archive that contains the latest firmware
 - connect the left half of the TOTEM to your PC, press reset twice
 - the keyboard should now appear as a mass storage device
-- drag'n'drop the `totem_left-xiao_ble-zmk.uf2` file from the archive onto the storage device
-- repeat this process with the right half and the `totem_right-xiao_ble-zmk.uf2` file.
+- drag'n'drop the `totem_left-seeeduino_xiao_ble-zmk.uf2` file from the archive onto the storage device
+- repeat this process with the right half and the `totem_right-seeeduino_xiao_ble-zmk.uf2` file.
