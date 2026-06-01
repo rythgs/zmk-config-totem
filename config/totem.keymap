@@ -195,7 +195,7 @@
         Function {
             bindings = <
        &kp Q   &swapper       &screenshot   &kp RA(RG(I))  &none     &none              &none                  &kp LA(LC(UP_ARROW))    &none              &none
-       &kp F1  &hml LCTRL F2  &hml LALT F3  &hml LSHFT F4  &kp F5    &none              &kp LA(LC(LEFT))       &kp LA(LC(C))           &kp LA(LC(RIGHT))  &none
+       &kp F1  &hml LCTRL F2  &hml LALT F3  &hml LSHFT F4  &kp F5    &none              &kp LA(LC(LEFT))       &kp LA(LC(E))           &kp LA(LC(RIGHT))  &none
 &none  &none   &none          &kp RA(C)     &none          &none     &none              &none                  &kp LA(LC(DOWN_ARROW))  &none              &none  &none
                               &trans        &trans         &trans    &kp LA(LC(ENTER))  &kp LA(LC(BACKSPACE))  &mo SYSTEM
             >;
