@@ -125,7 +125,7 @@ layers:
   - ''
   - ''
   - ''
-  - Alt+Ctl+UP ARROW
+  - ''
   - ''
   - ''
   - F1
@@ -134,9 +134,9 @@ layers:
   - {t: F4, h: LSHFT}
   - F5
   - ''
-  - Alt+Ctl+LEFT
-  - Alt+Ctl+E
-  - Alt+Ctl+RIGHT
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -146,15 +146,15 @@ layers:
   - ''
   - ''
   - ''
-  - Alt+Ctl+DOWN ARROW
+  - ''
   - ''
   - ''
   - ''
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+Ctl+ENTER
-  - Alt+Ctl+BACKSPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - System
   System:
   - OUT TOG
