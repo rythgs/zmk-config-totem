@@ -98,7 +98,7 @@ layers:
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
-  - ''
+  - '&back_forward'
   - ''
   - '6'
   - '7'
@@ -107,7 +107,7 @@ layers:
   - '0'
   - ''
   - ''
-  - '&back_forward'
+  - ''
   - {t: ▽, type: trans}
   - ''
   - ''
