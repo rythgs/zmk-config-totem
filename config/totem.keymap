@@ -65,15 +65,15 @@
             layers = <0>;
         };
 
-        Reset_L {
-            bindings = <&bootloader>;
-            key-positions = <20 14 25>;
+        right_click {
+            bindings = <&mkp RCLK>;
+            key-positions = <8 9>;
             layers = <0>;
         };
 
-        Reset_R {
-            bindings = <&bootloader>;
-            key-positions = <15 26 31>;
+        middle_click {
+            bindings = <&mkp MCLK>;
+            key-positions = <7 9>;
             layers = <0>;
         };
     };
@@ -167,7 +167,7 @@
 
         Base {
             bindings = <
-       &kp Q  &kp W         &kp F            &kp P              &kp B                 &kp J                &kp L                  &kp U             &kp Y         &none
+       &kp Q  &kp W         &kp F            &kp P              &kp B                 &kp J                &kp L                  &kp U             &kp Y         &mkp LCLK
        &kp A  &hml LCTRL R  &hml LEFT_ALT S  &hml LEFT_SHIFT T  &kp G                 &kp K                &hmr RIGHT_SHIFT N     &hmr RIGHT_ALT E  &hmr RCTRL I  &kp O
 &none  &kp Z  &kp X         &kp C            &kp D              &kp V                 &kp M                &kp H                  &kp COMMA         &kp DOT       &kp MINUS  &none
                             &mo FUNC         &lhp SYMBOL TAB    &mt LEFT_GUI SPACE    &mt RIGHT_GUI ENTER  &bspc_del_layer NAV 0  &mo MOUSE
@@ -187,26 +187,26 @@
             bindings = <
        &none   &none                       &none                   &none                     &none     &kp RC(UP)  &kp RC(LEFT)    &kp UP_ARROW    &kp RC(RIGHT)    &kp F11
        &kp N1  &hml LEFT_CONTROL NUMBER_2  &hml LEFT_ALT NUMBER_3  &hml LEFT_SHIFT NUMBER_4  &kp N5    &kp ESCAPE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
-&none  &kp N6  &kp N7                      &kp N8                  &kp N9                    &kp N0    &none       &none           &none           &kp PERIOD       &none    &none
+&none  &kp N6  &kp N7                      &kp N8                  &kp N9                    &kp N0    &none       &none           &none           &trans           &none    &none
                                            &trans                  &trans                    &trans    &trans      &trans          &trans
             >;
         };
 
         Function {
             bindings = <
-       &kp Q   &swapper       &screenshot   &kp RA(RG(I))  &none     &none   &none   &none       &none  &none
-       &kp F1  &hml LCTRL F2  &hml LALT F3  &hml LSHFT F4  &kp F5    &none   &none   &none       &none  &none
+       &kp Q   &swapper       &screenshot   &kp RA(RG(I))  &none     &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none   &none
+       &kp F1  &hml LCTRL F2  &hml LALT F3  &hml LSHFT F4  &kp F5    &none       &trans             &trans           &trans  &none
 &none  &none   &none          &kp RA(C)     &none          &none     &none   &none   &none       &none  &none  &none
-                              &trans        &trans         &trans    &trans  &trans  &mo SYSTEM
+                              &trans        &mo SYSTEM     &trans    &trans  &trans  &none
             >;
         };
 
         System {
             bindings = <
-       &out OUT_TOG   &none          &none          &none          &none             &none  &none  &kp C_VOLUME_UP    &none  &none
-       &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_CLR        &none  &none  &kp C_VOLUME_DOWN  &none  &none
-&none  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_CLR_ALL    &none  &none  &kp C_MUTE         &none  &none  &none
-                                     &none          &none          &none             &none  &none  &none
+       &out OUT_BLE  &out OUT_USB  &none  &none  &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+       &none         &none         &none  &none  &none    &none         &none         &none         &bt BT_CLR    &bt BT_CLR_ALL
+&none  &none         &none         &none  &none  &none    &none         &none         &none         &none         &none          &none
+                                   &none  &none  &none    &none         &none         &none
             >;
         };
 
