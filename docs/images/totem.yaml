@@ -107,7 +107,7 @@ layers:
   - '0'
   - ''
   - ''
-  - ''
+  - '&back_forward'
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -120,7 +120,7 @@ layers:
   Function:
   - Q
   - '&swapper'
-  - {t: Sft+Gui+4, s: Sft+Gui+5}
+  - '&screenshot'
   - AltGr+Gui+I
   - ''
   - MUTE
