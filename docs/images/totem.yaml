@@ -10,7 +10,7 @@ layers:
   - L
   - U
   - Y
-  - ''
+  - '&mkp LCLK'
   - A
   - {t: R, h: LCTRL}
   - {t: S, h: LEFT ALT}
@@ -108,7 +108,7 @@ layers:
   - ''
   - ''
   - ''
-  - .
+  - {t: ▽, type: trans}
   - ''
   - ''
   - {t: ▽, type: trans}
@@ -123,9 +123,9 @@ layers:
   - {t: Sft+Gui+4, s: Sft+Gui+5}
   - AltGr+Gui+I
   - ''
-  - ''
-  - ''
-  - ''
+  - MUTE
+  - VOLUME DOWN
+  - VOLUME UP
   - ''
   - ''
   - F1
@@ -134,9 +134,9 @@ layers:
   - {t: F4, h: LSHFT}
   - F5
   - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -151,50 +151,50 @@ layers:
   - ''
   - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - System
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
   System:
-  - OUT TOG
+  - OUT BLE
+  - OUT USB
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - VOLUME UP
   - ''
   - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - BT CLR
-  - ''
-  - ''
-  - VOLUME DOWN
-  - ''
-  - ''
-  - ''
-  - {t: BT DISC, h: '0'}
-  - {t: BT DISC, h: '1'}
-  - {t: BT DISC, h: '2'}
-  - {t: BT DISC, h: '3'}
   - BT CLR ALL
   - ''
   - ''
-  - MUTE
   - ''
   - ''
   - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
   - {type: held}
   - ''
   - ''
   - ''
   - ''
-  - {type: held}
   Mouse:
   - ''
   - ''
@@ -247,9 +247,9 @@ combos:
 - p: [21, 22, 23, 24]
   k: '&studio_unlock'
   l: [Base]
-- p: [20, 14, 25]
-  k: '&bootloader'
+- p: [8, 9]
+  k: '&mkp RCLK'
   l: [Base]
-- p: [15, 26, 31]
-  k: '&bootloader'
+- p: [7, 9]
+  k: '&mkp MCLK'
   l: [Base]
